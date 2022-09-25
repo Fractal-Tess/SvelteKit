@@ -1,8 +1,4 @@
-<script lang="ts">
-  export let cssClass = 'w-8';
-</script>
-
-<svg class={cssClass} aria-hidden="true" viewBox="0 0 24 24">
+<svg class="w-8" aria-hidden="true" viewBox="0 0 24 24">
   <mask class="moon" id="moon-mask">
     <rect x="0" y="0" width="100%" height="100%" fill="white" />
     <circle cx="24" cy="10" r="6" fill="black" />

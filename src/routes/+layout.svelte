@@ -23,11 +23,11 @@
   }
 </script>
 
-<div class="flex flex-col min-h-screen bg-base-200">
+<div
+  class="flex flex-col min-h-screen bg-gradient-to-t from-base-300 to-base-100"
+>
   <Header />
-  <main
-    class="flex-1 z-[10] grid grid-cols-1 grid-rows-1 shadow-primary  shadow-md"
-  >
+  <main class="flex-1 grid px-4 md:px-0">
     <slot />
   </main>
   <Footer />

@@ -26,7 +26,7 @@
   - Tauri store plugin
 - Automation
   - Husky
-  - TODO: Testing
+  - Testing
 
 ## What is inside
 

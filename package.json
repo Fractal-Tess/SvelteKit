@@ -14,22 +14,30 @@
     "format": "prettier --write ."
   },
   "lint-staged": {
-    "*.{ts,js,svelte}": [
+    "*.{ts,js,svelte,postcss}": [
       "prettier --write",
       "eslint"
-    ],
-    "*.{postcss}": [
-      "prettier --write"
     ]
   },
   "devDependencies": {
     "@fontsource/roboto": "^4.5.8",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@playwright/test": "^1.25.0",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "@types/js-cookie": "^3.0.2",
-    "autoprefixer": "^10.4.7",
-    "daisyui": "^2.27.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "autoprefixer": "^10.4.11",
+    "daisyui": "^2.28.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.1",
     "js-cookie": "^3.0.1",
     "lint-staged": "^13.0.3",
@@ -39,6 +47,7 @@
     "prettier-plugin-svelte": "^2.7.0",
     "svelte": "^3.44.0",
     "svelte-check": "^2.7.1",
+    "svelte-fa": "^3.0.3",
     "svelte-preprocess": "^4.10.7",
     "tailwindcss": "^3.1.5",
     "tslib": "^2.3.1",

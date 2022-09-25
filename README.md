@@ -9,33 +9,21 @@
 </div>
 </div>
 
-#### A simple React starter with a few opinionated additions.
+#### A simple Svelte-Kit starter with a few opinionated additions.
 
 - Typescript
 - UI:
   - Tailwind
+  - Postcss
   - DaisyUI
   - Fontawesome
   - Roboto Font
+  - Themes (cookies)
 - Code Quality
   - Prettier
   - Eslint
   - Lint-Staged
-- Tauri
-  - Tauri window state manager plugin
-  - Tauri store plugin
-- Automation
+- Automation & Testing
   - Husky
-  - Testing
+  - Playwright
 
-## What is inside
-
-The template comes with some preconfigured additions
-
-- Typescript
-- Tailwindcss
-- Daisyui
-- Postcss
-- Fontawesome Icons
-- Playwright
-- Prettier

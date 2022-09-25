@@ -8,6 +8,6 @@ declare namespace App {
   interface PageData {
     theme: import('./types').Theme | null;
   }
-  // interface PageError {}
+  // interface Error {}
   // interface Platform {}
 }

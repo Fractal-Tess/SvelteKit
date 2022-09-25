@@ -6,11 +6,21 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
+    "postinstall": "husky install",
     "test": "playwright test",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check .",
     "format": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.{ts,js,svelte}": [
+      "prettier --write",
+      "eslint"
+    ],
+    "*.{postcss}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
     "@fontsource/roboto": "^4.5.8",
@@ -20,7 +30,9 @@
     "@types/js-cookie": "^3.0.2",
     "autoprefixer": "^10.4.7",
     "daisyui": "^2.27.0",
+    "husky": "^8.0.1",
     "js-cookie": "^3.0.1",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "postcss-load-config": "^4.0.1",
     "prettier": "^2.6.2",

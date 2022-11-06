@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '../app.postcss';
+  import '$styles';
 
   import { browser } from '$app/environment';
   import { onMount } from 'svelte';
@@ -23,11 +23,9 @@
   }
 </script>
 
-<div
-  class="flex flex-col min-h-screen bg-gradient-to-t from-base-300 to-base-100"
->
+<div class="h-screen flex flex-col bg-gradient-to-t from-base-300 to-base-100">
   <Header />
-  <main class="flex-1 grid px-4 md:px-0">
+  <main class="flex-1">
     <slot />
   </main>
   <Footer />

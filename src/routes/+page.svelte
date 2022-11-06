@@ -1,4 +1,4 @@
-<div class="flex-1 flex flex-col space-y-8 items-center justify-center">
+<div class="h-full flex flex-col space-y-8 items-center justify-center">
   <h1 class="text-7xl font-bold text-primary">Welcome to SvelteKit</h1>
   <p class="text-3xl">
     Visit <a

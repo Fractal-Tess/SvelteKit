@@ -14,10 +14,8 @@
     "format": "prettier --write ."
   },
   "lint-staged": {
-    "*.{ts,js,svelte,postcss}": [
-      "prettier --write",
-      "eslint"
-    ]
+    "src/**/*.{js,ts,svelte}": "eslint --cache --fix",
+    "src/**/*.{js,ts,svelte,css,scss,postcss,md,json}": "prettier --write --ignore-unknown"
   },
   "devDependencies": {
     "@fontsource/roboto": "^4.5.8",

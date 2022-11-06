@@ -7,7 +7,6 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/Fractal-Tess/SvelteKit/main/static/app.jpg" width="580" style="border-radius:2rem"/>
 </div>
-</div>
 
 #### A simple Svelte-Kit starter with a few opinionated additions.
 

@@ -25,4 +25,3 @@
 - Automation & Testing
   - Husky
   - Playwright
-

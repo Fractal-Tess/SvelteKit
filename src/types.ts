@@ -1,6 +1,7 @@
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
-export type Theme = 'dark' | 'light';
+export const themes = ['dark', 'light'] as const;
+export type Theme = typeof themes[number];
 
 export type NavLink = {
   target: {

@@ -4,7 +4,7 @@ import type { Theme } from './types';
 
 const themeValidator = z.enum(['dark', 'light']);
 
-const validateTheme = (theme: any): theme is Theme => {
+const validateTheme = (theme: unknown): theme is Theme => {
   const vr = themeValidator.safeParse(theme);
   return vr.success;
 };

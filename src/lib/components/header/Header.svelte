@@ -7,7 +7,7 @@
   import { navLinks } from '$data/NavLinks';
 </script>
 
-<div class="bg-base-100 h-12 flex justify-between items-center px-4 shadow-md">
+<div class="h-12 flex justify-between items-center px-4">
   <a href="/" class="h-full px-2">
     <img src="/svelte.svg" alt="" class="h-full py-2" />
   </a>
@@ -22,8 +22,8 @@
     >
       <Fa icon={faGithub} class="text-2xl" />
     </a>
-    <button on:click={theme.toggleTheme}>
-      <ThemeToggle />
+    <button on:click={theme.toggleTheme} class="grid">
+      <ThemeToggle theme={$theme} />
     </button>
   </div>
 </div>

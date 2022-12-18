@@ -23,10 +23,17 @@
   }
 </script>
 
-<div class="h-screen flex flex-col bg-gradient-to-t from-base-300 to-base-100">
+<div class="h-screen flex flex-col">
   <Header />
   <main class="flex-1">
     <slot />
   </main>
   <Footer />
 </div>
+
+<style>
+  div {
+    background-image: url('/bg.avif');
+    background-size: cover;
+  }
+</style>

@@ -17,10 +17,12 @@ const config = {
     themes: [
       {
         light: {
-          ...require('daisyui/src/colors/themes')['[data-theme=light]']
+          ...require('daisyui/src/colors/themes')['[data-theme=lofi]'],
+          primary: '#45B1E8'
         },
         dark: {
-          ...require('daisyui/src/colors/themes')['[data-theme=dark]']
+          ...require('daisyui/src/colors/themes')['[data-theme=black]'],
+          primary: '#45B1E8'
         }
       }
     ]

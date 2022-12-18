@@ -15,7 +15,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,ts,svelte}": "eslint --cache --fix",
-    "src/**/*.{js,ts,svelte,postcss}": "prettier --write"
+    "src/**/*.{js,ts,svelte,postcss}": "prettier --write --plugin-search-dir=."
   },
   "devDependencies": {
     "@fontsource/roboto": "^4.5.8",

@@ -5,10 +5,14 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const config = {
   content: ['src/**/*.{html,js,svelte,ts}'],
 
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
         sans: ['roboto', ...defaultTheme.fontFamily.sans]
+      },
+      backgroundImage: {
+        pattern: "url('/bg.avif')"
       }
     }
   },

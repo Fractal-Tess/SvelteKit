@@ -23,17 +23,10 @@
   }
 </script>
 
-<div class="h-screen flex flex-col">
+<div class="h-screen flex flex-col dark:bg-pattern bg-cover">
   <Header />
   <main class="flex-1">
     <slot />
   </main>
   <Footer />
 </div>
-
-<style>
-  div {
-    background-image: url('/bg.avif');
-    background-size: cover;
-  }
-</style>

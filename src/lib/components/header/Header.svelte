@@ -7,9 +7,9 @@
   import { navLinks } from '$data/NavLinks';
 </script>
 
-<div class="h-12 flex justify-between items-center px-4">
-  <a href="/" class="h-full px-2">
-    <img src="/svelte.svg" alt="" class="h-full py-2" />
+<div class="h-20 flex justify-between items-center px-4">
+  <a href="/" class="h-3/4">
+    <img src="/svelte.svg" alt="" class="object-contain h-full py-2" />
   </a>
   <HorizontalNav {navLinks} />
   <div
@@ -20,10 +20,10 @@
       rel="noreferrer"
       target="_blank"
     >
-      <Fa icon={faGithub} class="text-2xl" />
+      <Fa icon={faGithub} class="text-3xl" />
     </a>
     <button on:click={theme.toggleTheme} class="grid">
-      <ThemeToggle theme={$theme} />
+      <ThemeToggle theme={$theme} class="h-9" />
     </button>
   </div>
 </div>

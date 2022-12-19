@@ -13,7 +13,7 @@
         <a
           href={navLink.target.href}
           target={navLink.target.newTab ? '_blank' : ''}
-          class={'font-bold text-lg ' +
+          class={'font-bold text-2xl ' +
             ($page.url.pathname === navLink.target.href
               ? 'border-b-2 border-primary text-primary'
               : '')}

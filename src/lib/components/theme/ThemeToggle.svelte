@@ -1,12 +1,14 @@
 <script lang="ts">
   import type { Theme } from '$types';
   export let theme: Theme = 'dark';
+  let _class = 'h-10';
+  export { _class as class };
 </script>
 
 <div
-  class="{`${
-    theme === 'dark' ? 'swap-active' : 'swap-off'
-  } swap swap-rotate`} h-8 w-8"
+  class={`
+  ${theme === 'dark' ? 'swap-active' : 'swap-off'}
+   swap swap-rotate ${_class}`}
 >
   <svg
     class="swap-on fill-current h-full w-full"

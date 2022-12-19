@@ -22,11 +22,13 @@ const config = {
       {
         light: {
           ...require('daisyui/src/colors/themes')['[data-theme=lofi]'],
-          primary: '#45B1E8'
+          primary: '#45B1E8',
+          secondary: '#fbbf24'
         },
         dark: {
           ...require('daisyui/src/colors/themes')['[data-theme=black]'],
-          primary: '#45B1E8'
+          primary: '#45B1E8',
+          secondary: '#fbbf24'
         }
       }
     ]

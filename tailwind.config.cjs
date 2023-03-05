@@ -12,7 +12,7 @@ const config = {
         sans: ['roboto', ...defaultTheme.fontFamily.sans]
       },
       backgroundImage: {
-        pattern: "url('/bg.avif')"
+        pattern: "url('/bg.png')"
       }
     }
   },

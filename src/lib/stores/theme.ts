@@ -19,7 +19,7 @@ export const createThemeStore = () => {
   return {
     subscribe,
     toggleTheme: () => {
-      update((currentTheme) => {
+      update(currentTheme => {
         const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
         setCookieTheme(nextTheme);

@@ -2,14 +2,14 @@
   import BackdropContainer from '$lib/components/containers/BackdropContainer.svelte';
 </script>
 
-<div class="h-full flex flex-col space-y-8 items-center justify-center">
+<div class="flex h-full flex-col items-center justify-center space-y-8">
   <BackdropContainer>
     <h1 class="text-7xl font-bold text-primary">Welcome to SvelteKit</h1>
     <p class="text-3xl">
       Visit <a
         href="https://kit.svelte.dev"
-        class="text-primary underline underline-offset-4">kit.svelte.dev</a
-      > to read the documentation
+        class="text-primary underline underline-offset-4">kit.svelte.dev</a> to read
+      the documentation
     </p>
   </BackdropContainer>
 </div>

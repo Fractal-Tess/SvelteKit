@@ -7,23 +7,19 @@
   import { navLinks } from '$data/NavLinks';
 </script>
 
-<div class="h-20 flex justify-between items-center px-4">
+<div class="flex h-20 items-center justify-between px-4">
   <a href="/" class="h-3/4">
-    <img src="/svelte.svg" alt="" class="object-contain h-full py-2" />
+    <img src="/svelte.svg" alt="" class="h-full object-contain py-2" />
   </a>
   <HorizontalNav {navLinks} />
   <div
-    class="flex items-center space-x-4 [&>*:hover]:text-primary [&>*]:duration-300 [&>*]:transition-all"
-  >
+    class="flex items-center space-x-4 [&>*:hover]:text-primary [&>*]:transition-all [&>*]:duration-300">
     <a
       href="https://github.com/Fractal-Tess/SvelteKit"
       rel="noreferrer"
-      target="_blank"
-    >
+      target="_blank">
       <Fa icon={faGithub} class="text-3xl" />
     </a>
-    <button on:click={theme.toggleTheme} class="grid">
-      <ThemeToggle theme={$theme} class="h-9" />
-    </button>
+    <ThemeToggle theme={$theme} onClick={theme.toggleTheme} />
   </div>
 </div>

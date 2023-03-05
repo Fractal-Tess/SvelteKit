@@ -14,10 +14,11 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "lint-staged": {
-    "src/**/*.{js,ts,svelte}": "eslint --cache --fix",
+    "src/**/*.{js,ts,svelte}": "eslint",
     "src/**/*.{js,ts,svelte,postcss}": "prettier --write --plugin-search-dir=."
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "@fontsource/roboto": "^4.5.8",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
@@ -35,7 +36,6 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-svelte3": "^4.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.3",
     "js-cookie": "^3.0.1",
     "lint-staged": "^13.1.2",

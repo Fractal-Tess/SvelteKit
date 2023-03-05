@@ -23,7 +23,8 @@
   }
 </script>
 
-<div class="h-screen flex flex-col dark:bg-pattern bg-cover">
+<div class="fixed inset-0 -z-50 bg-cover dark:bg-pattern" />
+<div class="flex h-screen flex-col">
   <Header />
   <main class="flex-1">
     <slot />

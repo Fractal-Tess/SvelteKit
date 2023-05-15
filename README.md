@@ -2,7 +2,7 @@
 
 ---
 
-# SvelteKit <img src="https://raw.githubusercontent.com/Fractal-Tess/SvelteKit/main/static/svelte.svg" width="30" align='center'/>
+# SvelteKit <img src="https://raw.githubusercontent.com/Fractal-Tess/SvelteKit/dev/static/svelte.svg" width="30" align='center'/>
 
 <div align="center">
 <img src="https://github.com/Fractal-Tess/SvelteKit/blob/dev/static/app.jpeg?raw=true" width="580" style="border-radius:2rem"/>

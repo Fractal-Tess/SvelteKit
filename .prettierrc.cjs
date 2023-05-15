@@ -1,5 +1,3 @@
-const path = require('node:path');
-
 module.exports = {
   singleQuote: true,
   trailingComma: 'none',
@@ -13,5 +11,6 @@ module.exports = {
   semi: true,
   plugins: ['prettier-plugin-svelte', 'prettier-plugin-tailwindcss'],
   overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }],
-  pluginSearchDirs: [path.join(__dirname, './')]
+  pluginSearchDirs: ['./'],
+  endOfLine: 'lf'
 };

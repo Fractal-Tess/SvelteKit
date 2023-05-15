@@ -2,7 +2,7 @@
   import BackdropContainer from '$lib/components/containers/BackdropContainer.svelte';
 </script>
 
-<div class="flex h-full flex-col items-center justify-center space-y-8">
+<div class="form-control flex-1 items-center justify-center">
   <BackdropContainer>
     <h1 class="text-7xl font-bold text-primary">Welcome to SvelteKit</h1>
     <p class="text-3xl">

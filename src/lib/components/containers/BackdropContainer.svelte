@@ -1,3 +1,3 @@
-<div class="rounded-md bg-base-100/30 p-8 backdrop-blur-lg">
+<div class="rounded-md bg-base-100 p-8">
   <slot />
 </div>

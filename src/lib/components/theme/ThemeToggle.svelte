@@ -1,17 +1,14 @@
 <script lang="ts">
-  import type { Theme } from '$types';
-  export let theme: Theme = 'dark';
-  export let onClick = () => {
-    console.log('unbound');
-  };
+  import { theme } from '$lib/stores/theme';
+
   let _class = 'h-10';
   export { _class as class };
 </script>
 
 <button
-  on:click={onClick}
+  on:click={theme.toggleTheme}
   class={`
-  ${theme === 'dark' ? 'swap-active' : 'swap-off'}
+  ${$theme === 'dark' ? 'swap-active' : 'swap-off'}
    swap swap-rotate ${_class} grid aspect-[1/1] h-8`}>
   <svg
     class="swap-on h-full w-full fill-current"

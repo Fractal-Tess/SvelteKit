@@ -1,19 +1,20 @@
-const daisyui = require('daisyui');
 const defaultTheme = require('tailwindcss/defaultTheme');
+const heropatterns = require('tailwindcss-hero-patterns/src/patterns');
 
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: ['src/**/*.{html,js,svelte,ts}'],
-
   darkMode: 'class',
+
   theme: {
     extend: {
       fontFamily: {
         sans: ['roboto', ...defaultTheme.fontFamily.sans]
-      },
-      backgroundImage: {
-        pattern: "url('/bg.png')"
       }
+    },
+    heroPatternsOpacities: ['10'],
+    heroPatterns: {
+      topography: heropatterns.topography
     }
   },
 
@@ -21,25 +22,19 @@ const config = {
     themes: [
       {
         light: {
-          ...require('daisyui/src/colors/themes')['[data-theme=light]'],
+          ...require('daisyui/src/colors/themes')['[data-theme=lofi]'],
           primary: '#45B1E8',
-          secondary: '#E8456B',
-          accent: '#3AE8C4',
-          "--btn-text-case": "none",
+          secondary: '#fbbf24'
         },
         dark: {
           ...require('daisyui/src/colors/themes')['[data-theme=black]'],
           primary: '#45B1E8',
-          secondary: '#E8456B',
-          accent: '#3AE8C4',
-          "--btn-text-case": "none",
-          '--rounded-box': '0.2rem',
-          '--rounded-btn': '0.2rem'
+          secondary: '#fbbf24'
         }
       }
     ]
   },
-  plugins: [daisyui]
+  plugins: [require('daisyui'), require('tailwindcss-hero-patterns')]
 };
 
 module.exports = config;

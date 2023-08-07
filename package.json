@@ -52,7 +52,7 @@
     "tailwindcss-hero-patterns": "^0.1.2",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4",
-    "vite": "^4.3.6",
+    "vite": "^4.4.9",
     "zod": "^3.21.4"
   },
   "type": "module",

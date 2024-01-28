@@ -11,6 +11,5 @@ module.exports = {
   semi: true,
   plugins: ['prettier-plugin-svelte', 'prettier-plugin-tailwindcss'],
   overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }],
-  pluginSearchDirs: ['./'],
   endOfLine: 'lf'
 };

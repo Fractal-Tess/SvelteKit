@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import type { Theme } from 'src/types';
+import type { Theme } from '$lib/types';
 import Cookie from 'js-cookie';
 import { browser } from '$app/environment';
 

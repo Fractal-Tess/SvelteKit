@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '$styles';
+  import '../app.postcss';
   import { env } from '$env/dynamic/public';
 
   import { theme } from '$lib/stores/theme';

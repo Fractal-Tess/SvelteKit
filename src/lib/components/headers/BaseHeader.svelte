@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ThemeToggle from '$components/theme/ThemeToggle.svelte';
+  import ThemeToggle from '$lib/components/theme/ThemeToggle.svelte';
   import { faGithub } from '@fortawesome/free-brands-svg-icons';
   import Fa from 'svelte-fa';
 </script>

@@ -29,7 +29,7 @@ jobs:
       - name: Install
         run: pnpm install --frozen-lockfile
       - name: Install
-        run: pnpm svelte:build
+        run: pnpm build
 
       - name: Create Release Pull Request
         id: changesets

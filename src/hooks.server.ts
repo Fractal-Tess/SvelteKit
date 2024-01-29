@@ -1,21 +1,13 @@
 import { env } from '$env/dynamic/public';
-import z from 'zod';
 import type { Handle } from '@sveltejs/kit';
-import type { Theme } from './lib/types';
 import PocketBase from 'pocketbase';
-
-const themeValidator = z.enum(['dark', 'light']);
-
-const validateTheme = (theme: unknown): theme is Theme => {
-  const vr = themeValidator.safeParse(theme);
-  return vr.success;
-};
+import { themeValidator } from '$lib/validators/theme';
 
 export const handle: Handle = async ({ event, resolve }) => {
   // Theme
-  const theme = event.cookies.get('theme');
-  if (validateTheme(theme)) {
-    event.locals.theme = theme;
+  const theme = await themeValidator.safeParseAsync(event.cookies.get('theme'));
+  if (theme.success) {
+    event.locals.theme = theme.data;
   } else event.locals.theme = null;
 
   // User

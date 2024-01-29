@@ -17,8 +17,6 @@
     },
     { href: '/contact', label: 'Contact' }
   ];
-
-  console.log($page.url);
 </script>
 
 <div class="flex h-20 items-center justify-between px-4">

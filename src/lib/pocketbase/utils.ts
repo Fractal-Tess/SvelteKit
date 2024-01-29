@@ -16,10 +16,10 @@ export const pocketbaseImageToUrl = (
   return url;
 };
 
-export type PBRecord<T, E = Record<string, unknown>> = RecordModel &
+export type PBRecord<T, E = unknown> = RecordModel &
   T &
   (E extends Record<string, unknown>
     ? {
-        expand: { [Key in keyof E]: E[Key] };
+        expand: { [Key in keyof E]: E[Key] } & RecordModel;
       }
     : unknown);

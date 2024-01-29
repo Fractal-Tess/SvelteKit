@@ -1,7 +1,24 @@
 <script lang="ts">
   import ThemeToggle from '$lib/components/theme/ThemeToggle.svelte';
+  import { cn } from '$lib/utils';
   import { faGithub } from '@fortawesome/free-brands-svg-icons';
+  import { page } from '$app/stores';
   import Fa from 'svelte-fa';
+
+  type Route = { href: string; label: string };
+  const routes: Route[] = [
+    {
+      href: '/',
+      label: 'Home'
+    },
+    {
+      href: '/about',
+      label: 'About'
+    },
+    { href: '/contact', label: 'Contact' }
+  ];
+
+  console.log($page.url);
 </script>
 
 <div class="flex h-20 items-center justify-between px-4">
@@ -11,23 +28,16 @@
       alt="svelte logo"
       class="aspect-square h-full py-4" />
   </a>
-  <nav>
-    <ul
-      class="flex gap-x-8 text-3xl font-bold
-      [&_a:hover]:text-primary [&_a]:transition-colors">
-      <li>
-        <a href="/"> Home </a>
-      </li>
-      <li>
-        <a href="/about"> About </a>
-      </li>
-      <li>
-        <a href="/contact"> Contact </a>
-      </li>
-      <li />
-    </ul>
+  <nav class="flex gap-x-8 text-3xl font-bold">
+    {#each routes as route}
+      <a
+        href={route.href}
+        class={cn(
+          'transition-colors hover:opacity-80',
+          route.href === $page.url.pathname ? '' : 'opacity-50'
+        )}>{route.label}</a>
+    {/each}
   </nav>
-
   <div
     class="flex items-center space-x-4 [&>*:hover]:text-primary [&>*]:transition-all [&>*]:duration-300">
     <a

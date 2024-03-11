@@ -42,7 +42,7 @@
     "eslint-plugin-svelte3": "^4.0.0",
     "husky": "^9.0.6",
     "js-cookie": "^3.0.5",
-    "lint-staged": "^15.2.0",
+    "lint-staged": "^15.2.2",
     "pocketbase": "^0.21.0",
     "postcss": "^8.4.33",
     "postcss-load-config": "^5.0.2",
